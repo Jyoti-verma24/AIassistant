@@ -1,97 +1,46 @@
-AI Research Assistant & Prompt Engineering Training Tool
-Overview
-This is a comprehensive, Flask-based web application designed to be a powerful tool for AI-driven research and prompt engineering. Powered by Google's Gemini AI through the LangChain framework, this application allows users to generate, analyze, and interact with content from various sources, including general topics, web articles, PDFs, and even YouTube videos.
+🤖 AI Research Assistant & Prompt Engineering Tool
 
-The project serves as a practical demonstration of modern AI integration, featuring user authentication, a dynamic user interface, and multiple advanced features that allow users to control and refine AI-generated content.
+A powerful, multi-featured web application built with Flask and powered by Google's Gemini AI. This tool allows users to summarize content from various sources, interact with documents, and experiment with AI behavior in real-time.
 
-Key Features
-This project is packed with a wide range of advanced features:
+✨ Key Features
+This project is a comprehensive suite of AI tools designed for research and learning:
 
-Ask Me Anything: A general-purpose chatbot that can answer any question, complete with a voice-to-text input option.
+General Purpose AI Chat
+Ask Me Anything: A fully functional chatbot that can answer general knowledge questions, complete with a voice-to-text option using the microphone.
 
-Multi-Source Summarization: Generate detailed summaries from:
+Multi-Source Summarization
+Topic Summarizer: Generate a detailed summary on any subject.
 
-General Topics: Any subject you can think of.
+URL Summarizer: Provide a link to any web article to get a summary and automatically extract the main content image.
 
-Web Articles: Provide a URL to get a summary and extract the main image.
+PDF Summarizer: Upload a PDF document for a complete summary.
 
-PDF Documents: Upload a PDF file for analysis.
+Advanced AI & Prompt Engineering Controls
+Creativity Slider (Temperature Control): A slider is included on every form, allowing you to directly control the AI's "creativity." A low temperature produces factual, predictable text, while a high temperature results in more imaginative and fluent responses.
 
-YouTube Videos: Simply provide a YouTube link to get a summary of the video's transcript.
+Interactive Tools & User Experience
+Chat with PDF: Upload a PDF document and ask specific questions about its contents. The AI will answer based only on the information in the document.
 
-Interactive AI Controls:
+"Read Aloud" with Stop Button: Every generated summary and answer includes an accessible "Read Aloud" button that transforms into a "Stop" button, allowing for easy text-to-speech functionality.
 
-Creativity Slider (Temperature): A slider on each form allows you to control the AI's "creativity," from highly factual (low temperature) to more imaginative and fluent (high temperature).
+"AI is Thinking..." Indicator: A professional loading spinner appears after submitting any request, providing clear feedback that the AI is processing in the background.
 
-Intelligent Image Extraction: When summarizing a URL, the application intelligently scrapes the webpage to find and display the most relevant content image.
-
-Interactive PDF Chat: Upload a PDF and ask specific questions about its content.
-
-Text-to-Speech: An accessible "Read Aloud / Stop" button appears next to every generated summary or answer, allowing the AI's response to be read out loud.
-
-Full User Authentication: Secure user registration and login system using JWT (JSON Web Tokens) stored in cookies.
-
-Search History: All generated summaries and images are saved to a user-specific history page for later review.
+Full User Authentication: Secure registration and login system using JWT, with a dedicated history page for each user to review past results.
 
 Download as PDF: Any generated summary can be downloaded as a cleanly formatted PDF document.
 
-Technologies Used
+💻 Technologies Used
+
 Backend: Python, Flask, Gunicorn
-
 Frontend: HTML, CSS, Bootstrap 5
-
 Database: SQLite
-
 AI & Machine Learning:
-
 LangChain
-
 Google Generative AI (Gemini)
 
-Other Key Libraries:
+Key Python Libraries:
+Flask-JWT-Extended
+youtube-transcript-api & pytube
+BeautifulSoup4 & requests
+PyMuPDF
 
-Flask-JWT-Extended for authentication.
-
-youtube-transcript-api for fetching video transcripts.
-
-BeautifulSoup4 for web scraping.
-
-PyMuPDF for PDF text extraction.
-
-Setup and Installation
-To run this project locally, please follow these steps:
-
-Clone the Repository:
-
-git clone https://github.com/Jyoti-verma24/AIassistant.git
-Create and Activate a Virtual Environment:
-
-# For Windows
-python -m venv venv
-venv\Scripts\activate
-
-Install Dependencies:
-
-pip install -r requirements.txt
-
-Create a .env File:
-Create a file named .env in the root of the project folder and add your API keys and secret keys:
-
-GOOGLE_API_KEY="your_google_api_key_here"
-SECRET_KEY="a_very_strong_random_secret_key"
-JWT_SECRET_KEY="another_very_strong_random_secret_key"
-
-Run the Application:
-
-python app.py
-
-The application will be running at http://127.0.0.1:5000.
-
-How to Use
-Register: Create a new user account.
-
-Login: Log in with your new credentials.
-
-Use the Tools: You will be redirected to the main dashboard where you can use any of the features.
-
-Check History: Click on the "History" tab in the sidebar to see all your past generations.
