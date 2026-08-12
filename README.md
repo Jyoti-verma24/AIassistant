@@ -265,6 +265,6 @@ This application can be useful for:
 
 ## 📸 Screenshots
 
-![Home Page](screenshots/home.png)
+![Login Page](screenshots/login.jfif)
 ---
 This project is developed for **educational, research, and learning purposes**, with a focus on exploring **Generative AI, prompt engineering, document processing, and AI-powered web applications**.
